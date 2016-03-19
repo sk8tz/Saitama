@@ -82,6 +82,15 @@
     <Reference Include="Saitama.Apple">
       <HintPath>..\packages\Saitama.Apple.0.1\lib\xamarinios10\Saitama.Apple.dll</HintPath>
     </Reference>
+    <Reference Include="Saitama.Core">
+      <HintPath>..\packages\Saitama.Core.0.1\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\Saitama.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Saitama.Container.Autofac">
+      <HintPath>..\packages\Saitama.Autofac.0.1.1\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\Saitama.Container.Autofac.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />

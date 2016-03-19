@@ -1,19 +1,29 @@
 ﻿using Foundation;
 using UIKit;
+using Saitama.Apple;
+using Saitama.Core.Framework;
+using System.Reflection;
+using Autofac;
+using PersonPicker.iOS.Services.Impl;
+using PersonPicker.iOS.Services;
 
 namespace PersonPicker.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the
     // User Interface of the application, as well as listening (and optionally responding) to application events from iOS.
     [Register("AppDelegate")]
-    public class AppDelegate : UIApplicationDelegate
+    public class AppDelegate : SaitamaApplicationDelegate
     {
         // class-level declarations
 
-        public override UIWindow Window
+        public override UIWindow Window { get; set; }
+
+        protected override InjectionContainerResolverBase GetInjectionContainerResolver()
         {
-            get;
-            set;
+            var builder = new ContainerBuilder();
+            builder.Register<SaoPersonService>().As<IPersonService>();
+
+            return new Saitama.Container.Autofac.Apple.AutofacPlatformInjectionContainerResolver(builder, Assembly.GetEntryAssembly());
         }
 
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
