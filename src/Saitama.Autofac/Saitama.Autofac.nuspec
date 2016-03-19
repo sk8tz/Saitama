@@ -2,8 +2,8 @@
 <package >
   <metadata>
     <id>Saitama.Autofac</id>
-    <version>0.1</version>
-    <title>Saitama Autofac Moduke</title>
+    <version>0.1.1</version>
+    <title>Saitama Autofac Module</title>
     <authors>Jason Farrell</authors>
     <owners>Jason Farrell</owners>
     <projectUrl>http://ww.jfarrell.net</projectUrl>
