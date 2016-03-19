@@ -20,7 +20,7 @@ namespace PersonPicker.iOS
         {
             base.ViewDidLoad();
 
-            Title = "People";
+            Title = "Characters";
         }
 
         public override nint RowsInSection(UIKit.UITableView tableView, nint section)
