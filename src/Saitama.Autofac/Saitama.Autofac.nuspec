@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Saitama.Autofac</id>
+    <version>0.1</version>
+    <title>Saitama Autofac Moduke</title>
+    <authors>Jason Farrell</authors>
+    <owners>Jason Farrell</owners>
+    <projectUrl>http://ww.jfarrell.net</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Pre-built Autofac module for Saitama framework</description>
+    <releaseNotes>Iniital Relase</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>Xamarin iOS Autofac</tags>
+  </metadata>
+</package>
