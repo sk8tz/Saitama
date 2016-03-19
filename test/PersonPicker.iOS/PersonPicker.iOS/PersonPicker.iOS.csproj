@@ -97,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="Main.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
