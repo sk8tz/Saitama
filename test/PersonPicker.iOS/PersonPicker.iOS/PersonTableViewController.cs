@@ -23,6 +23,14 @@ namespace PersonPicker.iOS
             Title = "Characters";
         }
 
+        public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
+        {
+            var controller = (PersonDetailTableViewController)segue.DestinationViewController;
+            controller.SelectedPerson = PersonService.GetPeople().ElementAt(TableView.IndexPathForSelectedRow.Row);
+
+            base.PrepareForSegue(segue, sender);
+        }
+
         public override nint RowsInSection(UIKit.UITableView tableView, nint section)
         {
             return PersonService.GetPeople().Count;
@@ -30,10 +38,13 @@ namespace PersonPicker.iOS
 
         public override UIKit.UITableViewCell GetCell(UIKit.UITableView tableView, NSIndexPath indexPath)
         {
-            var cell = new UITableViewCell(UITableViewCellStyle.Default, "DefaultCell");
-            var dataItem = PersonService.GetPeople().ElementAt(indexPath.Row);
+            var cell = tableView.DequeueReusableCell("NameCell") as NameTableViewCell;
+            if (cell != null)
+            {
+                var dataItem = PersonService.GetPeople().ElementAt(indexPath.Row);
+                cell.NameDisplay = dataItem.Handle;
+            }
 
-            cell.TextLabel.Text = dataItem.Handle;
             return cell;
         }
     }

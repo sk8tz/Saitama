@@ -111,6 +111,11 @@
     <Compile Include="Services\IPersonService.cs" />
     <Compile Include="Services\Impl\SaoPersonService.cs" />
     <Compile Include="PersonTableViewController.cs" />
+    <Compile Include="PersonDetailTableViewController.cs" />
+    <Compile Include="NameTableViewCell.cs" />
+    <Compile Include="NameTableViewCell.designer.cs">
+      <DependentUpon>NameTableViewCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
