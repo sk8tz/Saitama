@@ -116,6 +116,9 @@
     <Compile Include="NameTableViewCell.designer.cs">
       <DependentUpon>NameTableViewCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="PersonDetailTableViewController.designer.cs">
+      <DependentUpon>PersonDetailTableViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>

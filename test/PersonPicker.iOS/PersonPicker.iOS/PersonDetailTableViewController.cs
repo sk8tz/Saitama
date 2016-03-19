@@ -6,7 +6,7 @@ using PersonPicker.iOS.Models;
 namespace PersonPicker.iOS
 {
     [Register("PersonDetailTableViewController")]
-    public class PersonDetailTableViewController : UITableViewController
+    public partial class PersonDetailTableViewController : UITableViewController
     {
         public Person SelectedPerson { get; set; }
 
@@ -19,6 +19,9 @@ namespace PersonPicker.iOS
             base.ViewDidLoad();
 
             Title = SelectedPerson.Handle;
+            realNameLabel.Text = SelectedPerson.FullName;
+            ageLabel.Text = SelectedPerson.Age.ToString();
+            genderLabel.Text = SelectedPerson.Gender.ToString();
         }
     }
 }
