@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Reflection;
 using Autofac;
 using Saitama.Core.Framework;
 using Saitama.Core.Platform;
 
-namespace Saitama.Container.Autofac.Android
+namespace Saitama.Autofac.Android
 {
-    public class AutofacInjectionContainerResolver : AndroidPlatformInjectionContainerResolver
+    public class AutofacAppleInjectionContainerResolver : AndroidPlatformInjectionContainerResolver
     {
         private readonly ContainerBuilder _builder;
 
-        public AutofacInjectionContainerResolver(ContainerBuilder builder, Assembly entryAssembly) : base(entryAssembly)
+        public AutofacAppleInjectionContainerResolver(ContainerBuilder builder, Assembly entryAssembly) : base(entryAssembly)
         {
             _builder = builder;
         }

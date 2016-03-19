@@ -3,13 +3,13 @@ using Autofac;
 using Saitama.Core.Framework;
 using Saitama.Core.Platform;
 
-namespace Saitama.Container.Autofac.Apple
+namespace Saitama.Autofac.Apple
 {
-    public class AutofacPlatformInjectionContainerResolver : ApplePlatformInjectionContainerResolver
+    public class AutofacAndroidInjectionContainerResolver : ApplePlatformInjectionContainerResolver
     {
         private readonly ContainerBuilder _containerBuilder;
 
-        public AutofacPlatformInjectionContainerResolver(ContainerBuilder containerBuilder, Assembly entryAssembly) : base(entryAssembly)
+        public AutofacAndroidInjectionContainerResolver(ContainerBuilder containerBuilder, Assembly entryAssembly) : base(entryAssembly)
         {
             _containerBuilder = containerBuilder;
         }

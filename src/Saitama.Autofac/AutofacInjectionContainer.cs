@@ -1,7 +1,7 @@
 ﻿using Autofac;
 using Saitama.Core.Framework;
 
-namespace Saitama.Container.Autofac
+namespace Saitama.Autofac
 {
     public class AutofacInjectionContainer : IInjectionContainer
     {
