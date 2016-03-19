@@ -21,7 +21,7 @@ namespace PersonPicker.iOS
         protected override InjectionContainerResolverBase GetInjectionContainerResolver()
         {
             var builder = new ContainerBuilder();
-            builder.Register<SaoPersonService>().As<IPersonService>();
+            builder.RegisterType<SaoPersonService>().As<IPersonService>();
 
             return new Saitama.Container.Autofac.Apple.AutofacPlatformInjectionContainerResolver(builder, Assembly.GetEntryAssembly());
         }
