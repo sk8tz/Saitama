@@ -16,6 +16,13 @@ namespace PersonPicker.iOS
         {
         }
 
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+
+            Title = "People";
+        }
+
         public override nint RowsInSection(UIKit.UITableView tableView, nint section)
         {
             return PersonService.GetPeople().Count;
@@ -26,7 +33,7 @@ namespace PersonPicker.iOS
             var cell = new UITableViewCell(UITableViewCellStyle.Default, "DefaultCell");
             var dataItem = PersonService.GetPeople().ElementAt(indexPath.Row);
 
-            cell.TextLabel.Text = dataItem.FullName;
+            cell.TextLabel.Text = dataItem.Handle;
             return cell;
         }
     }
