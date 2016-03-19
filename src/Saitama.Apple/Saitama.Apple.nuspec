@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Saitama.Apple</id>
+    <version>0.1</version>
+    <title>Saitama iOS Library</title>
+    <authors>Jason Farrell</authors>
+    <owners>Jason Farrell</owners>
+    <projectUrl>http://www/jfarrell.net</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Primary support library for Xamarin apps utilizing Saitama for IoC management</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>Xamarin Apple IoC iOS</tags>
+  </metadata>
+</package>
