@@ -7,7 +7,7 @@ using UIKit;
 
 namespace PersonPicker.iOS
 {
-    [Register("PersonTableViewController")]
+    [Register("PeopleTableViewController")]
     public class PersonTableViewController : SaitamaTableViewController
     {
         public IPersonService PersonService { get; set; }
