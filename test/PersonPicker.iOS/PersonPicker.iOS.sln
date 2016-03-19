@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonPicker.iOS", "PersonPicker.iOS\PersonPicker.iOS.csproj", "{C76AF5AA-B695-45FD-A7FB-C1F3BFB7900B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C76AF5AA-B695-45FD-A7FB-C1F3BFB7900B}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{C76AF5AA-B695-45FD-A7FB-C1F3BFB7900B}.Debug|iPhone.Build.0 = Debug|iPhone
+		{C76AF5AA-B695-45FD-A7FB-C1F3BFB7900B}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{C76AF5AA-B695-45FD-A7FB-C1F3BFB7900B}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{C76AF5AA-B695-45FD-A7FB-C1F3BFB7900B}.Release|iPhone.ActiveCfg = Release|iPhone
+		{C76AF5AA-B695-45FD-A7FB-C1F3BFB7900B}.Release|iPhone.Build.0 = Release|iPhone
+		{C76AF5AA-B695-45FD-A7FB-C1F3BFB7900B}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{C76AF5AA-B695-45FD-A7FB-C1F3BFB7900B}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal
