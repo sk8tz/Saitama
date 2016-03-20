@@ -1,11 +1,11 @@
 using Android.App;
 using Saitama.Android.Framework;
 
-namespace Saitama.Android.Services
+namespace Saitama.Android.Fragments
 {
-    public abstract class SaitamaService : Service
+    public abstract class SaitamaFragment : Fragment
     {
-        protected SaitamaService()
+        protected SaitamaFragment()
         {
             SaitamaContext.GetContainer().InjectForInstance(this);
         }
