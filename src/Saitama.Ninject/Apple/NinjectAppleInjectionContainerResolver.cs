@@ -5,11 +5,11 @@ using Saitama.Core.Platform;
 
 namespace Saitama.Container.Ninject.Apple
 {
-    public class NinjectInjectionContainerResolver : ApplePlatformInjectionContainerResolver
+    public class NinjectAppleInjectionContainerResolver : ApplePlatformInjectionContainerResolver
     {
         private readonly IKernel _theKernel;
 
-        public NinjectInjectionContainerResolver(IKernel kernel, Assembly entryAssembly) : base(entryAssembly)
+        public NinjectAppleInjectionContainerResolver(IKernel kernel, Assembly entryAssembly) : base(entryAssembly)
         {
             _theKernel = kernel;
         }
@@ -35,4 +35,3 @@ namespace Saitama.Container.Ninject.Apple
         #endregion
     }
 }
-
