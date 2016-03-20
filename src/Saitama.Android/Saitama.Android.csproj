@@ -14,8 +14,8 @@
     <FileAlignment>512</FileAlignment>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v5.1</TargetFrameworkVersion>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,6 +47,7 @@
     <Compile Include="Activities\SaitamaExpandableListActivity.cs" />
     <Compile Include="Activities\SaitamaActivity.cs" />
     <Compile Include="Activities\SaitamaListActivity.cs" />
+    <Compile Include="Fragments\SaitamaFragment.cs" />
     <Compile Include="Framework\SaitamaContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receivers\SaitamaBroadcastReceiver.cs" />
