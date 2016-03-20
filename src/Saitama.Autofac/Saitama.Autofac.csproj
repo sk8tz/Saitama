@@ -34,9 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Android\AutofacAppleInjectionContainerResolver.cs" />
+    <Compile Include="Android\AutofacAndroidInjectionContainerResolver.cs" />
     <Compile Include="AutofacInjectionContainer.cs" />
-    <Compile Include="Apple\AutofacAndroidInjectionContainerResolver.cs" />
+    <Compile Include="Apple\AutofacAppleInjectionContainerResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
