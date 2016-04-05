@@ -6,7 +6,7 @@ using Saitama.Android.Activities;
 
 namespace PersonPicker.Android
 {
-    [Activity(Label = "PersonPicker.Android", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "One Punch Man", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : SaitamaListActivity
     {
         public IPersonService PersonService { get; set; }

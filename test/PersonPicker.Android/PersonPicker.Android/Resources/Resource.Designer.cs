@@ -63,6 +63,12 @@ namespace PersonPicker.Android
 			// aapt resource value: 0x7f050000
 			public const int nameText = 2131034112;
 			
+			// aapt resource value: 0x7f050001
+			public const int randomNumberFragment = 2131034113;
+			
+			// aapt resource value: 0x7f050002
+			public const int randomNumberView = 2131034114;
+			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -81,6 +87,9 @@ namespace PersonPicker.Android
 			
 			// aapt resource value: 0x7f030001
 			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int RandomNumber = 2130903042;
 			
 			static Layout()
 			{

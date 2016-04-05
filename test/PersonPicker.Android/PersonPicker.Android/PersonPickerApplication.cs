@@ -22,6 +22,7 @@ namespace PersonPicker.Android
         {
             var cb = new ContainerBuilder();
             cb.RegisterType<OnePunchHeroPersonService>().As<IPersonService>();
+            cb.RegisterType<RandomNumberService>().As<INumberService>();
 
             return new AutofacInjectionContainerResolver(cb, Assembly.GetExecutingAssembly());
         }
