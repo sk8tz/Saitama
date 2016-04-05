@@ -3,17 +3,18 @@ using Android.OS;
 using Android.Views;
 using Android.Widget;
 using PersonPicker.Android.Services;
+using Saitama.Android.Fragments;
 using Saitama.Android.Framework;
 
 namespace PersonPicker.Android
 {
-    public class RandomNumberFragment : Fragment
+    public class RandomNumberFragment : SaitamaFragment
     {
         public INumberService NumberService { get; set; }
 
         public RandomNumberFragment()
         {
-            NumberService = SaitamaContext.GetContainer().Get<INumberService>();
+            
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
